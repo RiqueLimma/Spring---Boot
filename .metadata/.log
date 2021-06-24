@@ -1,0 +1,1090 @@
+!SESSION 2021-06-23 19:47:14.272 -----------------------------------------------
+eclipse.buildId=4.19.0.I20210303-1800
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2021-06-23 19:47:49.620
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-06-23 19:47:49.620
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2021-06-23 19:47:50.522
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2021-06-23 19:47:50.570
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2021-06-23 19:47:51.598
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-06-23 19:47:51.598
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e60d4f4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14091e24,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-06-23 19:48:07.841
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-06-23 19:50:40.931
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:113)
+	at org.eclipse.swt.graphics.GC.<init>(GC.java:167)
+	at org.eclipse.swt.graphics.GC.<init>(GC.java:135)
+	at org.springsource.ide.eclipse.commons.livexp.ui.DescriptionSection.createContents(DescriptionSection.java:99)
+	at org.springsource.ide.eclipse.commons.livexp.ui.WizardPageWithSections.createControl(WizardPageWithSections.java:93)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:178)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:743)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:635)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1094)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:99)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper$1.linkActivated(EmptyWorkspaceHelper.java:284)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:215)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:309)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.lambda$3(AbstractHyperlink.java:117)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-06-23 19:51:12.401
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:274)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:287)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:265)
+	at org.eclipse.jface.dialogs.DialogPage.getImage(DialogPage.java:266)
+	at org.eclipse.jface.wizard.WizardPage.getImage(WizardPage.java:152)
+	at org.eclipse.jface.wizard.WizardDialog.updateTitleBar(WizardDialog.java:1467)
+	at org.eclipse.jface.wizard.WizardDialog.update(WizardDialog.java:1320)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:1281)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:637)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1094)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:99)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper$1.linkActivated(EmptyWorkspaceHelper.java:284)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:215)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:309)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.lambda$3(AbstractHyperlink.java:117)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY Activator 1 0 2021-06-23 19:51:22.313
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:51:27.792
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:51:43.168
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:51:43.344
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:51:43.934
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:51:44.813
+!MESSAGE Has main method computation for project 'mentabilidade'
+
+!ENTRY Activator 1 0 2021-06-23 19:51:44.813
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:51:50.699
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:51:50.708
+!MESSAGE Has main method computation for project 'mentabilidade'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:19.732
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:19.732
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@46afa67b[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=525)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:19.738
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:19.761
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.799
+!MESSAGE Boot LS startup time from start to initialized: 3053ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.923
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tfVUdkPkisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.927
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.929
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.930
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.931
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tfVUdkPk => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.932
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.939
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.943
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk helloturma25 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.944
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.949
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.953
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk mentabilidade false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:22.954
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:52:23.339
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-06-23 19:54:43.524
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY Activator 1 0 2021-06-23 19:55:08.392
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:55:08.402
+!MESSAGE Has main method computation for project 'mentabilidade'
+
+!ENTRY Activator 1 0 2021-06-23 19:55:08.792
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:55:08.799
+!MESSAGE Has main method computation for project 'mentabilidade'
+
+!ENTRY Activator 1 0 2021-06-23 19:55:28.870
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:55:28.932
+!MESSAGE Has main method computation for project 'mentabilidade'
+
+!ENTRY Activator 1 0 2021-06-23 19:55:29.524
+!MESSAGE Has main method computation for project 'mentabilidade'
+
+!ENTRY Activator 1 0 2021-06-23 19:55:29.596
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:59:41.864
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:59:41.866
+!MESSAGE Has main method computation for project 'mentabilidade'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:53.822
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:53.825
+!MESSAGE classpath=4 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:53.825
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk ex1 false 4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:53.826
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:53.827
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk mentabilidade true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:53.828
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 2 batched events
+
+!ENTRY Activator 1 0 2021-06-23 19:59:53.843
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:53.865
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 19:59:55.064
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:59:56.428
+!MESSAGE Has main method computation for project 'ex1'
+
+!ENTRY Activator 1 0 2021-06-23 19:59:56.431
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:56.433
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:56.440
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:56.448
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk ex1 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:56.448
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 19:59:56.498
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 19:59:57.030
+!MESSAGE Has main method computation for project 'ex1'
+
+!ENTRY Activator 1 0 2021-06-23 19:59:57.045
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:59:58.214
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 19:59:58.228
+!MESSAGE Has main method computation for project 'ex1'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:24.041
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:24.042
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk ex1 true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:24.043
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:24.045
+!MESSAGE classpath=4 entries
+
+!ENTRY Activator 1 0 2021-06-23 20:00:24.045
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:24.045
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk ex1-ex2 false 4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:24.046
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:24.082
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:00:24.673
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:00:26.066
+!MESSAGE Has main method computation for project 'ex1-ex2'
+
+!ENTRY Activator 1 0 2021-06-23 20:00:26.077
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:26.081
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:26.108
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:26.115
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk ex1-ex2 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:26.116
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:00:26.157
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:00:27.791
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:00:27.792
+!MESSAGE Has main method computation for project 'ex1-ex2'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:02:20.870
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:02:20.871
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk ex1-ex2 true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:02:20.871
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:02:20.880
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:02:20.881
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:46.185
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:46.248
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:46.299
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:46.346
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:47.388
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:47.448
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:47.631
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:47.695
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:47.776
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:47.779
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:47.781
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk exercicios false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:47.781
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY Activator 1 0 2021-06-23 20:03:47.788
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:47.842
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:03:48.182
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:48.183
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:48.190
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:48.196
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk exercicios false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:48.196
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:48.253
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:03:48.397
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:48.586
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:48.703
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-06-23 20:03:49.049
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:113)
+	at org.eclipse.swt.graphics.GC.<init>(GC.java:167)
+	at org.eclipse.swt.graphics.GC.<init>(GC.java:135)
+	at org.springsource.ide.eclipse.commons.livexp.ui.DescriptionSection.createContents(DescriptionSection.java:99)
+	at org.springsource.ide.eclipse.commons.livexp.ui.GroupSection.createContents(GroupSection.java:99)
+	at org.springsource.ide.eclipse.commons.livexp.ui.GroupSection.createContents(GroupSection.java:99)
+	at org.springframework.ide.eclipse.boot.livexp.ui.DynamicSection.updateContent(DynamicSection.java:88)
+	at org.springframework.ide.eclipse.boot.livexp.ui.DynamicSection.lambda$0(DynamicSection.java:64)
+	at org.springsource.ide.eclipse.commons.livexp.core.UIValueListener$1.uiGotValue(UIValueListener.java:75)
+	at org.springsource.ide.eclipse.commons.livexp.core.UIValueListener$NotifyingJob.runInUIThread(UIValueListener.java:39)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY Activator 1 0 2021-06-23 20:03:50.198
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:50.199
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:50.360
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:50.362
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:50.381
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:50.389
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:50.447
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk exercicios false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:50.447
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY Activator 1 0 2021-06-23 20:03:50.630
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:03:50.634
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:03:51.105
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:51.146
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:51.686
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:03:51.687
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:04:28.001
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY Activator 1 0 2021-06-23 20:04:28.002
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:04:28.009
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk exercicios true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:04:28.011
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:04:28.148
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:05:12.406
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:12.469
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:12.524
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:13.466
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:13.507
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:13.697
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:13.743
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:13.787
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:13.788
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:13.789
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk exercicios false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:13.791
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY Activator 1 0 2021-06-23 20:05:13.818
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:13.830
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:05:14.062
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:14.074
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:14.097
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:14.109
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk exercicios false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:14.110
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:14.135
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-06-23 20:05:14.389
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:113)
+	at org.eclipse.swt.graphics.GC.<init>(GC.java:167)
+	at org.eclipse.swt.graphics.GC.<init>(GC.java:135)
+	at org.springsource.ide.eclipse.commons.livexp.ui.DescriptionSection.createContents(DescriptionSection.java:99)
+	at org.springsource.ide.eclipse.commons.livexp.ui.GroupSection.createContents(GroupSection.java:99)
+	at org.springsource.ide.eclipse.commons.livexp.ui.GroupSection.createContents(GroupSection.java:99)
+	at org.springframework.ide.eclipse.boot.livexp.ui.DynamicSection.updateContent(DynamicSection.java:88)
+	at org.springframework.ide.eclipse.boot.livexp.ui.DynamicSection.lambda$0(DynamicSection.java:64)
+	at org.springsource.ide.eclipse.commons.livexp.core.UIValueListener$1.uiGotValue(UIValueListener.java:75)
+	at org.springsource.ide.eclipse.commons.livexp.core.UIValueListener$NotifyingJob.runInUIThread(UIValueListener.java:39)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-06-23 20:05:14.390
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:113)
+	at org.eclipse.swt.graphics.GC.<init>(GC.java:167)
+	at org.eclipse.swt.graphics.GC.<init>(GC.java:135)
+	at org.springsource.ide.eclipse.commons.livexp.ui.DescriptionSection.createContents(DescriptionSection.java:99)
+	at org.springsource.ide.eclipse.commons.livexp.ui.GroupSection.createContents(GroupSection.java:99)
+	at org.springsource.ide.eclipse.commons.livexp.ui.GroupSection.createContents(GroupSection.java:99)
+	at org.springframework.ide.eclipse.boot.livexp.ui.DynamicSection.updateContent(DynamicSection.java:88)
+	at org.springframework.ide.eclipse.boot.livexp.ui.DynamicSection.lambda$0(DynamicSection.java:64)
+	at org.springsource.ide.eclipse.commons.livexp.core.UIValueListener$1.uiGotValue(UIValueListener.java:75)
+	at org.springsource.ide.eclipse.commons.livexp.core.UIValueListener$NotifyingJob.runInUIThread(UIValueListener.java:39)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY Activator 1 0 2021-06-23 20:05:14.423
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:14.436
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:15.372
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:15.373
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:15.463
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:15.464
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:15.475
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:15.479
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:15.483
+!MESSAGE buffering callback sts4.classpath.tfVUdkPk exercicios false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:15.484
+!MESSAGE executing callback sts4.classpath.tfVUdkPk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-23 20:05:15.641
+!MESSAGE executing callback sts4.classpath.tfVUdkPk SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-06-23 20:05:15.710
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:15.713
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:16.079
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:16.086
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:16.536
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:16.536
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:53.609
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:53.611
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:53.772
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:05:53.772
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:06:12.848
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:06:12.849
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:06:13.007
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:06:13.008
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:07:00.105
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:07:00.106
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:07:00.234
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:07:00.234
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:07:13.521
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:07:13.522
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:07:14.081
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:07:14.090
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:11:36.438
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:11:36.439
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:11:37.078
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:11:37.079
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:13:31.612
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:13:31.614
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:13:32.212
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:13:32.212
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:16:08.393
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:16:08.395
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:16:08.937
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:16:08.988
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:17:07.775
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:17:07.775
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:17:08.369
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:17:08.372
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:21:05.584
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:21:05.584
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:21:11.161
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:21:11.162
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:21:38.500
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:21:38.501
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:21:39.092
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:21:39.092
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:22:11.629
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:22:11.630
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:22:12.197
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:22:12.205
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2021-06-23 20:22:31.752
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+	at java.base/java.util.ImmutableCollections$MapN.<init>(ImmutableCollections.java:1019)
+	at java.base/java.util.Map.of(Map.java:1327)
+	at org.eclipse.m2e.editor.lemminx.InitializationOptionsProvider.toLemMinXOptions(InitializationOptionsProvider.java:26)
+	at org.eclipse.m2e.editor.lemminx.InitializationOptionsProvider.get(InitializationOptionsProvider.java:22)
+	at org.eclipse.m2e.editor.lemminx.InitializationOptionsProvider.get(InitializationOptionsProvider.java:1)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getInitiatizationOptions(XMLExtensionRegistry.java:135)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:158)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$5(LanguageServerWrapper.java:352)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1769)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+!ENTRY Activator 1 0 2021-06-23 20:22:41.636
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:22:41.636
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:22:42.576
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:22:42.576
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:25:29.362
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:25:29.362
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:25:29.956
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:25:29.963
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:27:25.407
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:27:25.408
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:27:26.007
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:27:26.008
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:27:44.444
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:27:44.447
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:27:44.616
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:27:44.623
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:28:11.579
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:28:11.582
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:28:12.952
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:28:12.960
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:28:25.684
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:28:25.692
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:28:26.592
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:28:26.593
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:32:24.184
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:32:24.186
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:32:25.014
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:32:25.124
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:36:03.218
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:36:03.222
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:36:03.846
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:36:03.847
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:36:32.555
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:36:32.556
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:36:33.117
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:36:33.118
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:38:33.341
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:38:33.342
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:38:33.528
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:38:33.530
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:38:55.114
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:38:55.115
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:38:55.683
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:38:55.689
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-06-23 20:39:42.861
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-06-23 20:43:52.452
+!MESSAGE Has main method computation for project 'helloturma25'
+
+!ENTRY Activator 1 0 2021-06-23 20:43:52.454
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:43:53.049
+!MESSAGE Has main method computation for project 'exercicios'
+
+!ENTRY Activator 1 0 2021-06-23 20:43:53.050
+!MESSAGE Has main method computation for project 'helloturma25'
